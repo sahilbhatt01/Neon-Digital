@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Growth Roadmap</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ===== HEADER SPACING ===== */
+section{
+padding:120px 0;
+}
+
+/* ===== ROADMAP CONTAINER ===== */
+.timeline{
+position:relative;
+margin-top:60px;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+left:50%;
+top:0;
+width:3px;
+height:100%;
+background:linear-gradient(#00f7ff,#ff00c8);
+transform:translateX(-50%);
+}
+
+/* ===== ITEM ===== */
+.timeline-item{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+margin-bottom:90px;
+position:relative;
+}
+
+/* alternate layout */
+.timeline-item:nth-child(even){
+flex-direction:row-reverse;
+}
+
+/* ICON */
+.timeline-icon{
+width:65px;
+height:65px;
+border-radius:50%;
+background:linear-gradient(90deg,#00f7ff,#ff00c8);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+color:#000;
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+box-shadow:0 0 25px rgba(0,247,255,0.5);
+z-index:2;
+}
+
+/* BOX */
+.timeline-box{
+width:45%;
+background:rgba(255,255,255,0.05);
+padding:35px;
+border-radius:22px;
+border:1px solid rgba(255,255,255,0.08);
+transition:0.4s;
+position:relative;
+overflow:hidden;
+}
+
+.timeline-box:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(0,247,255,0.25);
+}
+
+/* STEP TAG */
+.step-tag{
+display:inline-block;
+padding:5px 12px;
+font-size:12px;
+border-radius:20px;
+background:rgba(0,247,255,0.15);
+color:#00f7ff;
+margin-bottom:10px;
+}
+
+/* TITLE */
+.timeline-box h3{
+font-size:24px;
+margin-bottom:10px;
+color:#00f7ff;
+}
+
+/* DESCRIPTION */
+.timeline-box p{
+opacity:0.85;
+line-height:1.8;
+margin-bottom:12px;
+}
+
+/* HIGHLIGHT BOX */
+.highlight{
+background:rgba(255,0,200,0.08);
+padding:12px;
+border-left:3px solid #ff00c8;
+border-radius:10px;
+font-size:14px;
+margin-top:10px;
+}
+
+/* BULLETS */
+ul{
+margin-top:10px;
+padding-left:18px;
+opacity:0.9;
+}
+
+ul li{
+margin-bottom:6px;
+}
+
+/* ANIMATION */
+.timeline-box{
+opacity:0;
+transform:translateY(40px);
+animation:fadeUp 0.8s ease forwards;
+}
+
+.timeline-item:nth-child(1) .timeline-box{animation-delay:0.1s;}
+.timeline-item:nth-child(2) .timeline-box{animation-delay:0.2s;}
+.timeline-item:nth-child(3) .timeline-box{animation-delay:0.3s;}
+.timeline-item:nth-child(4) .timeline-box{animation-delay:0.4s;}
+.timeline-item:nth-child(5) .timeline-box{animation-delay:0.5s;}
+.timeline-item:nth-child(6) .timeline-box{animation-delay:0.6s;}
+
+@keyframes fadeUp{
+to{opacity:1;transform:translateY(0);}
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+.timeline::before{
+left:20px;
+}
+
+.timeline-item,
+.timeline-item:nth-child(even){
+flex-direction:column;
+}
+
+.timeline-box{
+width:100%;
+margin-left:60px;
+}
+
+.timeline-icon{
+left:20px;
+transform:none;
+}
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="header"></div>
+
+<section>
+<div class="container">
+
+<h1 class="title">Growth <span>Roadmap</span></h1>
+
+<p class="subtitle">
+A complete system we use to transform businesses into high-performing digital brands with predictable growth.
+</p>
+
+<div class="timeline">
+
+<!-- 1 -->
+<div class="timeline-item">
+<div class="timeline-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+<div class="timeline-box">
+<span class="step-tag">STEP 01</span>
+<h3>Deep Business Audit</h3>
+
+<p>
+We analyze your entire digital presence including website, ads, competitors,
+target audience behavior, conversion funnel and brand positioning.
+</p>
+
+<ul>
+<li>Competitor analysis report</li>
+<li>Traffic & conversion breakdown</li>
+<li>Weak point identification</li>
+</ul>
+
+<div class="highlight">
+💡 Goal: Find exactly why you are not scaling and what is blocking revenue.
+</div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="timeline-item">
+<div class="timeline-icon"><i class="fa-solid fa-lightbulb"></i></div>
+
+<div class="timeline-box">
+<span class="step-tag">STEP 02</span>
+<h3>Strategy Blueprint</h3>
+
+<p>
+We build a full performance strategy including paid ads structure,
+SEO plan, funnel design and content direction.
+</p>
+
+<ul>
+<li>Customer journey mapping</li>
+<li>Ad funnel architecture</li>
+<li>Content & branding strategy</li>
+</ul>
+
+<div class="highlight">
+💡 Goal: Create a predictable system for leads and sales.
+</div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="timeline-item">
+<div class="timeline-icon"><i class="fa-solid fa-rocket"></i></div>
+
+<div class="timeline-box">
+<span class="step-tag">STEP 03</span>
+<h3>Launch Campaigns</h3>
+
+<p>
+We launch high-performance marketing campaigns across Google,
+Meta, and organic channels.
+</p>
+
+<ul>
+<li>Google Ads setup</li>
+<li>Meta Ads campaigns</li>
+<li>Landing pages & tracking setup</li>
+</ul>
+
+<div class="highlight">
+💡 Goal: Start generating traffic & leads immediately.
+</div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="timeline-item">
+<div class="timeline-icon"><i class="fa-solid fa-chart-line"></i></div>
+
+<div class="timeline-box">
+<span class="step-tag">STEP 04</span>
+<h3>Optimization Engine</h3>
+
+<p>
+We continuously test and improve ads, creatives, targeting and funnels
+to reduce cost and increase conversions.
+</p>
+
+<ul>
+<li>A/B testing ads</li>
+<li>Conversion rate optimization</li>
+<li>Daily performance tracking</li>
+</ul>
+
+<div class="highlight">
+💡 Goal: Improve ROI and reduce customer acquisition cost.
+</div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="timeline-item">
+<div class="timeline-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+
+<div class="timeline-box">
+<span class="step-tag">STEP 05</span>
+<h3>Scaling Phase</h3>
+
+<p>
+We scale winning campaigns aggressively and expand into new audiences
+and platforms for maximum growth.
+</p>
+
+<ul>
+<li>Budget scaling strategy</li>
+<li>New audience expansion</li>
+<li>Multi-channel growth</li>
+</ul>
+
+<div class="highlight">
+💡 Goal: Multiply revenue without increasing inefficiency.
+</div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="timeline-item">
+<div class="timeline-icon"><i class="fa-solid fa-crown"></i></div>
+
+<div class="timeline-box">
+<span class="step-tag">STEP 06</span>
+<h3>Market Domination</h3>
+
+<p>
+Your brand becomes a recognized authority in your niche with
+consistent leads, sales and strong digital presence.
+</p>
+
+<ul>
+<li>Brand authority building</li>
+<li>Long-term growth system</li>
+<li>High retention audience</li>
+</ul>
+
+<div class="highlight">
+💡 Goal: Turn your business into a market leader.
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<div id="footer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

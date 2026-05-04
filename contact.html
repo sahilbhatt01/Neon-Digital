@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact | NeonDigital</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* EXTRA CONTACT STYLES */
+
+.contact-grid{
+display:grid;
+grid-template-columns:1.2fr 1fr;
+gap:40px;
+align-items:start;
+}
+
+.contact-card{
+padding:30px;
+border-radius:24px;
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+transition:.4s;
+animation:float 5s ease-in-out infinite;
+}
+
+.contact-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(0,247,255,.2);
+}
+
+.contact-info{
+display:flex;
+gap:15px;
+align-items:center;
+margin-bottom:20px;
+}
+
+.contact-info i{
+font-size:26px;
+color:#00f7ff;
+background:rgba(0,247,255,.1);
+padding:12px;
+border-radius:12px;
+}
+
+.contact-info div h4{
+margin-bottom:4px;
+}
+
+input,textarea{
+width:100%;
+padding:16px;
+margin-bottom:15px;
+border:none;
+outline:none;
+border-radius:14px;
+background:rgba(255,255,255,.06);
+color:#fff;
+transition:.3s;
+}
+
+input:focus,textarea:focus{
+box-shadow:0 0 10px rgba(0,247,255,.3);
+}
+
+.form-title{
+margin-bottom:20px;
+font-size:22px;
+color:#00f7ff;
+}
+
+.glow-btn{
+width:100%;
+padding:15px;
+border:none;
+border-radius:40px;
+font-weight:700;
+cursor:pointer;
+background:linear-gradient(90deg,#00f7ff,#ff00c8);
+transition:.4s;
+}
+
+.glow-btn:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(255,0,200,.3);
+}
+
+/* FLOAT ANIMATION */
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
+
+/* MOBILE */
+@media(max-width:900px){
+.contact-grid{
+grid-template-columns:1fr;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- TITLE -->
+<section style="padding-top:140px;">
+<div class="container">
+
+<h1 class="title">Let's <span>Talk Growth</span></h1>
+<p class="subtitle">
+We help businesses scale faster with digital marketing, SEO, ads, and conversion systems.
+Let’s build something powerful together.
+</p>
+
+<!-- CONTACT GRID -->
+<div class="contact-grid">
+
+<!-- LEFT INFO -->
+<div class="contact-card">
+
+<h3 class="form-title">📞 Contact Information</h3>
+
+<div class="contact-info">
+<i class="fa-solid fa-phone"></i>
+<div>
+<h4>Phone</h4>
+<p>+91 99999 99999</p>
+</div>
+</div>
+
+<div class="contact-info">
+<i class="fa-solid fa-envelope"></i>
+<div>
+<h4>Email</h4>
+<p>hello@neondigital.com</p>
+</div>
+</div>
+
+<div class="contact-info">
+<i class="fa-solid fa-location-dot"></i>
+<div>
+<h4>Location</h4>
+<p>India, Remote Agency</p>
+</div>
+</div>
+
+<div class="contact-info">
+<i class="fa-solid fa-clock"></i>
+<div>
+<h4>Working Hours</h4>
+<p>Mon - Sat | 9AM - 8PM</p>
+</div>
+</div>
+
+</div>
+
+<!-- RIGHT FORM -->
+<div class="contact-card">
+
+<h3 class="form-title">🚀 Send Message</h3>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Business Name">
+
+<textarea rows="6" placeholder="Tell us about your project..."></textarea>
+
+<button class="glow-btn">
+<i class="fa-solid fa-paper-plane"></i> Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
